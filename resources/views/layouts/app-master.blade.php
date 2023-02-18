@@ -9,7 +9,9 @@
     <title>Fixed top navbar example · Bootstrap v5.1</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="{!! url('assets/bootstrap/css/bootstrap.min.css') !!}" rel="stylesheet">
+   {{-- <link rel="stylesheet" href="{!! ('/asset/bootstrap/css/bootstrap.min.css')!!}" rel="stylesheet">--}}
+    <link rel="stylesheet"  href="/bootstrap/js/bootstrap.min.js" >
+    <link rel="stylesheet"  href="/bootstrap/js/bootstrap.bundle.min.js" >
 
     <style>
         .bd-placeholder-img {
@@ -29,7 +31,7 @@
 
 
     <!-- Custom styles for this template -->
-    <link href="{!! url('assets/css/app.css') !!}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/app.css" rel="stylesheet">
 </head>
 <body>
 
@@ -39,7 +41,8 @@
     @yield('content')
 </main>
 
-<script src="{!! url('assets/bootstrap/js/bootstrap.bundle.min.js') !!}"></script>
+{{--<script src="{!! ('/asset/bootstrap/js/bootstrap.bundle.min.js') !!}"></script>--}}
+<link rel="stylesheet" type="text/css" href="/bootstrap/js/bootstrap.bundle.min.js" >
 
 </body>
 </html>
